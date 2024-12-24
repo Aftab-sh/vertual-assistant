@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    font-family: "Ubuntu", serif;
+    padding: 20px;
+}
+
+/* Logo */
+#logo {
+    width: 15vw;
+    max-width: 200px;
+    min-width: 80px;
+    height: auto;
+}
+
+/* Headings */
+h1 {
+    color: aliceblue;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#name {
+    color: rgb(212, 43, 122);
+    font-size: 2rem;
+}
+
+#va {
+    color: rgb(43, 150, 212);
+    font-size: 2rem;
+}
+
+/* Voice Image */
+#voice {
+    width: 200px;
+    display: none;
+}
+
+/* Button */
+#btn {
+    width: 25%;
+    max-width: 300px;
+    min-width: 120px;
+    background: linear-gradient(to right, rgb(21, 145, 207), rgb(201, 41, 116));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1rem;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 10px rgb(21, 145, 207), 2px 2px 10px rgb(201, 41, 116);
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#btn:hover {
+    box-shadow: 2px 2px 15px rgb(21, 145, 207), 2px 2px 15px rgb(201, 41, 116);
+    letter-spacing: 2px;
+}
+
+/* Responsive Typography and Layout */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #name, #va {
+        font-size: 1.5rem;
+    }
+
+    #btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    #logo {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #name, #va {
+        font-size: 1.2rem;
+    }
+
+    #btn {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    #logo {
+        width: 30vw;
+    }
+}
